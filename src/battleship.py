@@ -1,5 +1,5 @@
 import random
-from constants import NUMBER_SHIPS
+from src.constants import NUMBER_SHIPS
 
           
 class Battleship:

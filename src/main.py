@@ -1,12 +1,11 @@
 
-from battleship import Battleship,create_message
-from constants import BOARD_SIZE,NUMBER_GUESS,NUMBER_SHIPS
-
+from src import Battleship,create_message
+from src import BOARD_SIZE,NUMBER_GUESS,NUMBER_SHIPS
 
 
 def RunGame(): 
-  computer_board = Battleship([[" "] * BOARD_SIZE for i in range(8)])
-  user_guess_board = Battleship([[" "] * BOARD_SIZE for i in range(8)])
+  computer_board = Battleship([[" "] * BOARD_SIZE for i in range(BOARD_SIZE)])
+  user_guess_board = Battleship([[" "] * BOARD_SIZE for i in range(BOARD_SIZE)])
   board, ships_location = Battleship.create_ships(computer_board)
 
   turns = NUMBER_GUESS
