@@ -8,4 +8,4 @@ COPY . .
 
 RUN python /app/setup.py develop
 
-CMD ["python", "./src/main.py"]
+#CMD ["python", "./src/main.py"]
