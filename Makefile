@@ -6,5 +6,5 @@ install: ## Build the docker container
 run: ## Run the game.
 	$(DOCKER) python3 ./src/main.py 
 
-##test: ## Run the tests
-##	$(DOCKER) python3 -m unittest discover -v -s . -p "*_test.py"
+test: ## Run the tests
+	$(DOCKER) python3 -m unittest discover -v -s . -p "*_test.py"
