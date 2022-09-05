@@ -1,9 +1,15 @@
 
-from src import Battleship, create_message
-from src import BOARD_SIZE, NUMBER_GUESS, NUMBER_SHIPS
+from src.battleship import Battleship, create_message
+from src.constants import BOARD_SIZE, NUMBER_GUESS, NUMBER_SHIPS
 
 
 def RunGame():
+    """Entry point of application that runs the game loop
+    """
+
+    print("-----Welcome to Battleships-----")
+    print("You have 20 guesses to take down 2 ships, may the battle begin!")
+
     computer_board = Battleship(
         [[" "] * BOARD_SIZE for i in range(BOARD_SIZE)])
     user_guess_board = Battleship(
