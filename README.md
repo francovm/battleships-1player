@@ -17,29 +17,46 @@ Python 3.9
 
 ## Install
 
-```sh
-make install
-```
-Or, you can download the source and
+
+Download the source
 
 ```
    $ git clone git@github.com:Refactorahau/Battleships-Franco-Vega-Mercado.git
    $ cd Battleships-Franco-Vega-Mercado
-   $ python setup.py install
+```
+and
+ 
+```
+make install
 ```
 
+or 
+
+```sh
+$ python setup.py install
+```
 Add sudo in the beginning if you met problem.
 
 ## Usage
 
 ```sh
-make run
+$ make run
+```
+or
+
+```
+$ python ./src/main.py
 ```
 
 ## Run tests
 
 ```sh
-make test
+$ make test
+```
+or 
+
+```
+$ python -m unittest discover -v -s . -p "*_test.py"
 ```
 
 ## Author
